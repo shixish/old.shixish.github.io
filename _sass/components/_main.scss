@@ -109,18 +109,18 @@ footer{
   text-decoration: none;
   color: inherit;
 }
-.list-social-icons-3x{
-  @extend .list-social-icons;
-  .tooltip.top{
-    margin-top: -20px;
-  }
-}
-.list-social-icons-5x{
-  @extend .list-social-icons;
-  .tooltip.top{
-    margin-top: -43px;
-  }
-}
+// .list-social-icons-3x{
+//   @extend .list-social-icons;
+//   .tooltip.top{
+//     margin-top: -20px;
+//   }
+// }
+// .list-social-icons-5x{
+//   @extend .list-social-icons;
+//   .tooltip.top{
+//     margin-top: -43px;
+//   }
+// }
 
 .facebook-link a:hover {
   color: #3b5998;
@@ -291,7 +291,7 @@ body {
 }
 
 @-webkit-keyframes pulse {    
-    0 {
+    0% {
         -webkit-transform: scale(1);
         transform: scale(1);
     }
@@ -308,7 +308,7 @@ body {
 }
 
 @-moz-keyframes pulse {    
-    0 {
+    0% {
         -moz-transform: scale(1);
         transform: scale(1);
     }
@@ -465,10 +465,11 @@ i.scroll:hover {
 
 .homepage-list{
   li{
-    padding-bottom: 8px;
+    padding: 8px 0;
   }
   .fa-li{
     font-size: 1.5em;
+    padding-top: 4px;
   }
 }
 
@@ -477,4 +478,6 @@ article.row{
   padding: 1em 0;
   margin-bottom: 1em;
   border-radius: 1ex;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #CFCFCF;
 } 
