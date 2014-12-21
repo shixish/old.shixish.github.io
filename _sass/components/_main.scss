@@ -1,0 +1,461 @@
+@import "compass/css3/columns";
+
+/* 
+Custom CSS for...
+'Modern Business' HTML Theme by Start Bootstrap
+
+All Start Bootstrap themes are licensed under Apache 2.0. 
+For more info and more free Bootstrap 3 HTML themes, visit http://startbootstrap.com!
+*/
+
+/* Global Styles */
+
+html, body {
+  height:100%;
+}
+
+body {
+  padding-top: 50px; /* body padding for fixed top nav */
+  background: #e1e1e1;
+}
+
+q{
+  font-style: italic;  
+}
+
+.content{
+  background: white;
+  padding-bottom: 20px;
+}
+footer{
+  padding: 20px 0;
+  min-height: 80px;
+  margin-top: 10px;
+}
+
+.gray-box {
+  @extend .section-colored;
+  margin-top: 50px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.rounded{
+  border-radius: 4px;
+}
+
+.img-home-portfolio,
+.img-customer,
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+.tab-pane {
+  margin-top: 15px;
+}
+
+/* Page Sections */
+.section,
+.section-colored {
+  padding: 50px 0;
+}
+
+.section-colored {
+  background-color: #e1e1e1; /* change this to change the background color of a colored section */
+}
+
+.sidebar {
+  margin-top: 40px;
+}
+
+.sidebar ul {
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #cccccc;
+}
+
+/* Half Page Height Carousel Customization */
+.carousel {
+  height: 50%;
+}
+
+.item,
+.active,
+.carousel-inner {
+  height: 100%;
+}
+
+.fill {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Social Icons Styles */
+#social{
+  padding: 40px 0 0 0;
+}
+
+.tooltip-social a {
+  text-decoration: none;
+  color: inherit;
+}
+.list-social-icons-3x{
+  @extend .list-social-icons;
+  .tooltip.top{
+    margin-top: -20px;
+  }
+}
+.list-social-icons-5x{
+  @extend .list-social-icons;
+  .tooltip.top{
+    margin-top: -43px;
+  }
+}
+
+.facebook-link a:hover {
+  color: #3b5998;
+}
+
+.linkedin-link a:hover {
+  color: #007fb1;
+}
+
+.twitter-link a:hover {
+  color: #39a9e0;
+}
+
+.google-plus-link a:hover {
+  color: #d14836;
+}
+
+.github-link a:hover{
+  color: #4183c4;
+}
+
+.stack-overflow-link a:hover{
+  color: #818085;
+}
+
+/* Service Page Styles */
+.service-icon {
+  font-size: 50px;
+}
+
+/* 404 Page Styles */
+.error-404 {
+  font-size: 8em;
+}
+
+/* Pricing Page Styles */
+.price {
+  font-size: 4em;
+}
+
+.price-cents {
+  vertical-align: super;
+  font-size: 50%;
+}
+
+.price-month {
+  font-size: 35%;
+  font-style: italic;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+  .carousel {
+    height: 70%; /* increases the carousel height so it looks good on phones */
+  }
+}
+
+.carousel-caption{
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+#demo-content{
+  background: #ccc url('http://placehold.it/750x450&text=Demo') no-repeat;
+  background-size: 100% auto;
+  display:block;
+  height: 0;
+  padding-bottom: 60%;
+  max-width: 100%;
+  overflow: hidden;
+  &.fullscreen-mode{
+    width: 100% !important;
+    height: 100% !important;
+    padding: 0 !important;
+  }
+  &.blank{
+    background: white !important;
+  }
+}
+
+#fullscreen-button{
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  background: silver;
+  background: rgba(185, 185, 185, 0.90);
+  font-size: 20px;
+  line-height: 20px;
+  padding: 5px 5px 15px 15px;
+  border-bottom-left-radius: 50px;
+  text-align: right;
+}
+
+//about me page
+.js-skills{
+  @include column-count(2);
+  list-style: none;
+  padding: 0;
+  li{
+    padding:5px;
+  }
+  li:nth-child(even){
+    background: #f4f4f4;
+  }
+  li:nth-child(odd){
+    background: #e6e6e6;
+  }
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.placemark{
+  position:relative;
+  top:-52px;
+}
+
+.vert-text {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#title {
+  padding: 0;
+  margin: 0;
+  font-size: 4.5em;
+  font-weight: 700;
+}
+
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    padding: 7px 16px;
+    border: 2px solid #fff;
+    border-radius: 35px;
+    font-size: 40px;
+    color: #fff;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+/* Buttons */
+
+.btn-circle:hover,
+.btn-circle:focus {
+    outline: 0;
+    color: #fff;
+    background: rgba(255,255,255,.1);
+}
+
+.page-scroll .btn-circle i.animated {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+}
+
+.page-scroll .btn-circle:hover i.animated {
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+}
+
+@-webkit-keyframes pulse {    
+    0 {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes pulse {    
+    0 {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -moz-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+/* Full Page Image Header Area */
+
+.header {
+  display: table;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: url(../img/clouds.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Intro */
+
+.intro {
+  padding: 50px 0;
+}
+
+/* Services */
+
+.service-item {
+  margin-bottom: 15px;
+}
+
+i.service-icon {
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 56px;
+  width: 140px;
+  height: 140px;
+  line-height: 136px;
+  vertical-align: middle; 
+  text-align: center;
+}
+
+/* Callout */
+
+.callout {
+  color: #ffffff;
+  display: table;
+  height: 400px;
+  width: 100%;
+  background: url(../img/grass.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Portfolio */
+
+.portfolio {
+  padding: 50px 0;
+}
+
+.portfolio-item {
+  margin-bottom: 25px;
+}
+
+.img-portfolio {
+  margin: 0 auto;
+}
+
+
+/* Content sections */
+.content-section-a {
+	background-color: #f8f8f8;
+	padding: 50px 0;
+}
+
+.content-section-b {
+  background-color: #ffffff;
+	border-top: 1px solid #e7e7e7;
+	border-bottom: 1px solid #e7e7e7;
+	padding: 50px 0;
+}
+
+.content-section-c {
+  background: #7fbbda;
+  padding: 50px 0;
+  color: #ffffff;
+}
+
+
+/* Call to Action */
+
+.call-to-action {
+  color: #ffffff;
+  background: #0a5175;
+  padding: 50px 0;
+}
+
+.call-to-action .btn {
+  margin: 10px;
+}
+
+/* Map */
+
+.map {
+  height: 500px;
+}
+
+.top-scroll {
+  margin-top: 50px;
+}
+
+.top-scroll a {
+  text-decoration: none;
+  color: inherit;
+}
+
+i.scroll {
+  color: #333333;
+}
+
+i.scroll:hover {
+  color: #0a5175;
+}
+/* Responsive */
+
+@media (max-width: 768px) {
+	
+  .header {
+	background: url(../img/clouds.jpg) no-repeat center center scroll; 
+  }
+
+  .callout {
+	background: url(../img/grass.jpg) no-repeat center center scroll; 
+  }
+
+  .map {
+	height: 75%;
+  }
+
+}
