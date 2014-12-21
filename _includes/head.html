@@ -16,6 +16,9 @@
     <!--[if IE]>
         <link href="{{ "/css/ie.css" | prepend: site.baseurl }}" media="screen, projection" rel="stylesheet" type="text/css" />
     <![endif]-->
+    {% for css in page.extra_css %}
+    <link rel="stylesheet" href="{{ css }}">
+    {% endfor %}
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->

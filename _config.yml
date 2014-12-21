@@ -12,3 +12,9 @@ github_username:  shixish
 markdown: kramdown
 permalink: pretty
 pygments: true
+
+# Define custom collections
+collections:
+  experiments:
+    output: true
+    permalink: /experiments/:path/

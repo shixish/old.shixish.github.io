@@ -1,0 +1,51 @@
+---
+layout: page
+title: Experiments
+---
+{% assign experiments = (site.experiments | sort: 'updated') %}
+<div class="container">
+  {% include page_header.html %}
+  <div class="row">
+    <h4>This is a list of little projects that I've toyed around with over the years.</h4>
+  </div>
+  {% for experiment in experiments reversed %}
+    <div class="row">
+        <div class="col-md-6 portfolio-item">
+          {% if experiment.images %}
+            {% if experiment.images.size > 1 %}
+            <div id="experiment-slides" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                {% for img in experiment.images %}
+                <li data-target="#experiment-slides" data-slide-to="{{ forloop.index0 }}"{% if forloop.first %} class="active"{% endif %}></li>
+                {% endfor %}
+              </ol>
+              
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                {% for img in experiment.images %}
+                <div class="item{% if forloop.first %} active{% endif %}">
+                  <img class="img-responsive" src="{{ img.src }}">
+                  <div class="carousel-caption">
+                    <strong>{{ img.caption }}</strong>
+                  </div>
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+            {% else %}
+              <a href="{{ experiment.url }}"><img class="img-responsive" src="{{ experiment.images[0].src }}"></a>
+            {% endif %}
+          {% else %}
+            <a href="{{ experiment.url }}"><img class="img-responsive" src="http://placehold.it/750x450"></a>
+          {% endif %}
+          <h3>
+            <a href="{{ experiment.url }}">{{ experiment.title }}</a>
+            {% if experiment.updated %}
+              <small>{{ experiment.updated | date: "%b %-d, %Y" }}</small>
+            {% endif %}
+          </h3>
+          <p>{{ experiment.description }}</p>
+        </div>
+    </div>
+  {% endfor %}
+</div>

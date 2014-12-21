@@ -1,0 +1,40 @@
+---
+layout: page
+---
+<div class="page-content">
+  <div class="wrap">
+  
+  
+  </div>
+</div>
+<div class="container">
+  {% include page_header.html %}
+  <!-- <% include ../section/breadcrumb %> -->
+  <div class="row">
+    <div class="col-md-8">
+      {{ content }}
+    </div>
+    <div class="col-md-4">
+      {% if page.subtitle %}
+      <h3>
+        {{ page.subtitle }}
+      </h3>
+      {% endif %}
+      {% if page.description %}
+        <p>{{ page.description }}</p>
+      {% endif %}
+      {% if page.instructions %}
+        <hr>
+        <p>{{ page.instructions }}</p>
+      {% endif %}
+      {% if page.updated %}
+        <i>Last update: {{ page.updated | date: "%b %-d, %Y" }}</i>
+      {% endif %}
+      {% if page.github %}
+      <div class="list-social-icons-3x">
+        <span class="tooltip-social github-link"><a href="{{ page.github }}" data-toggle="tooltip" data-placement="top" title="View the project on GitHub"><i class="fa fa-github-alt fa-3x"></i></a></span>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
