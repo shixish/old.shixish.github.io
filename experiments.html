@@ -9,7 +9,7 @@ title: Experiments
     <h4>This is a list of little projects that I've toyed around with over the years.</h4>
   </div>
   {% for experiment in experiments reversed %}
-    <div class="row">
+    <article class="row">
         <div class="col-md-6 portfolio-item">
           {% if experiment.images %}
             {% if experiment.images.size > 1 %}
@@ -24,7 +24,7 @@ title: Experiments
               <div class="carousel-inner" role="listbox">
                 {% for img in experiment.images %}
                 <div class="item{% if forloop.first %} active{% endif %}">
-                  <img class="img-responsive" src="{{ img.src }}">
+                  <img class="img-responsive" src="/experiments/demos/{{ img.src }}">
                   <div class="carousel-caption">
                     <strong>{{ img.caption }}</strong>
                   </div>
@@ -33,7 +33,7 @@ title: Experiments
               </div>
             </div>
             {% else %}
-              <a href="{{ experiment.url }}"><img class="img-responsive" src="{{ experiment.images[0].src }}"></a>
+              <a href="{{ experiment.url }}"><img class="img-responsive" src="/experiments/demos/{{ experiment.images[0].src }}"></a>
             {% endif %}
           {% else %}
             <a href="{{ experiment.url }}"><img class="img-responsive" src="http://placehold.it/750x450"></a>
@@ -46,6 +46,6 @@ title: Experiments
           </h3>
           <p>{{ experiment.description }}</p>
         </div>
-    </div>
+    </article>
   {% endfor %}
 </div>

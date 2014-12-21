@@ -7,17 +7,17 @@ description: "I made this project using HTML5 Canvas and the new getUserMedia() 
 instructions: "I think this only works in Google Chrome but it may also work in Firefox (dunno). Your browser should ask you if you want to share your webcam then you should see your beautiful mug pop up over the image of the beach.<br>There are three settings. Each of which work poorly (lol) but are fun nonetheless."
 github: 'https://github.com/shixish/chroma-key'
 images:
-- src: "/experiments/chroma-key/imgs/results/normal.jpg"
+- src: "/chroma-key/imgs/results/normal.jpg"
   caption: "Normal"
-- src: "/experiments/chroma-key/imgs/results/chroma-key.jpg"
+- src: "/chroma-key/imgs/results/chroma-key.jpg"
   caption: "Key out blue"
-- src: "/experiments/chroma-key/imgs/results/subtraction.jpg"
+- src: "/chroma-key/imgs/results/subtraction.jpg"
   caption: "Subtract the background"
-- src: "/experiments/chroma-key/imgs/results/subtraction2.jpg"
+- src: "/chroma-key/imgs/results/subtraction2.jpg"
   caption: "Subtract the background (junk)"
-- src: "/experiments/chroma-key/imgs/results/fancy.jpg"
+- src: "/chroma-key/imgs/results/fancy.jpg"
   caption: "Fancy made up method"
-- src: "/experiments/chroma-key/imgs/results/fancy2.jpg"
+- src: "/chroma-key/imgs/results/fancy2.jpg"
   caption: "Creepy fancy"
 ---
 Chroma Key Stuffs
