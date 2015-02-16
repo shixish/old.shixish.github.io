@@ -1,9 +1,9 @@
-[submodule "public/experiments/chroma-key"]
-	path = public/experiments/chroma-key
+[submodule "_experiments/demos/chroma-key"]
+	path = _experiments/demos/chroma-key
 	url = https://github.com/shixish/chroma-key.git
-[submodule "public/experiments/fractal-fun"]
-	path = public/experiments/fractal-fun
+[submodule "_experiments/demos/fractal-fun"]
+	path = _experiments/demos/fractal-fun
 	url = https://github.com/shixish/fractal-fun.git
-[submodule "public/experiments/music"]
-	path = public/experiments/music
+[submodule "_experiments/demos/music"]
+	path = _experiments/demos/music
 	url = https://github.com/shixish/music.git
